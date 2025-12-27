@@ -21,7 +21,7 @@ pipeline{
         stage("Push to DockerHub"){
             steps{
                 script {
-                    dockerpush("notes-app","latest")
+                    dockerpush("dockerHubCreds","notes-app","latest")
                 }
             }
         }
