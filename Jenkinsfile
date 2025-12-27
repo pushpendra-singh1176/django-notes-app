@@ -1,4 +1,4 @@
-@Library('Shared')_
+@Library('shared')_
 pipeline{
     agent { label 'vinod'}
     
@@ -11,7 +11,7 @@ pipeline{
         }
         stage("Code Build"){
             steps{
-            dockerbuild("notes-app","latest")
+            build("notes-app","latest")
             }
         }
         stage("Push to DockerHub"){
