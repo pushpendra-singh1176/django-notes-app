@@ -21,7 +21,7 @@ pipeline{
         stage("Push to DockerHub"){
             steps{
                 script {
-                    dockerpush("dockerHubCreds","notes-app","latest")
+                    dockerpush("xerox2","notes-app","latest")
                 }
             }
         }
